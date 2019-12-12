@@ -1,0 +1,562 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>#HelloEarth</title>
+    <link rel="stylesheet" type="text/css" href="dist/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/icon.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/hover-min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="dist/css/leaflet.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+</head>
+
+<body>
+    <a name="home"></a>
+    <div class="" style="height:100%;width:100%;margin-top:15px" data-vide-bg="img/video-bg.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%, bgColor:gray, resizing: true">
+        <div class="ui middle aligned one column centered grid fluid" style="height:100%" id="heder-section">
+            <div class="row">
+                <div class="column center aligned">
+                    <img src="img/logo.png" alt="" class="ui image centered medium wow bounceInDown">
+                    <h1 class="ui header wow fadeInRightBig" style="color:white;font-size:90px;font-family: 'hello';"># HelloEarth</h1>
+                    <div class="massive ui orange button coupled register-modal thai">ลงทะเบียน</div>
+                </div>
+            </div>
+            <div class="row">
+                <a href="#details" class="scroll-down" address="true" ></a>
+            </div>
+        </div>
+    </div>
+    <div id="stickmenu" style="margin-top:0px">
+        <div class="ui sticky">
+            <div class="ui inverted menu menu-decor">
+                <div class="menu" style="margin:auto;">
+                    <a href="#home" class="ui item"><i class="home icon"></i>Home</a>
+                    <a href="#details" class="ui item"><i class="info icon"></i>Details</a>
+                    <a href="#sponsored" class="ui item"><i class="suitcase icon"></i>Sponsors</a>
+                    <a href="#calendar" class="ui item"><i class="calendar icon"></i>Calendar</a>
+                    <a href="#important" class="ui item"><i class="warning icon"></i>Important</a>
+                    <a href="#gallery" class="ui item"><i class="camera icon"></i>Gallery</a>
+                    <a href="#faqs" class="ui item"><i class="help icon"></i>FAQs</a>
+                    <a href="#contactus" class="ui item"><i class="call icon"></i>Contact us</a>
+                    <a href="#dev" class="ui item"><i class="bug icon"></i>Team No.2</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax-bg/mid_cloud.png" data-z-index="-96">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax-bg/front_cloud.png" data-z-index="-97">
+                <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax-bg/finalback_cloud.png" data-z-index="-98">
+                    <div name="details" style="height:50px"></div>
+                    <div class="ui container fluid" style="padding-top:0px;padding-bottom:400px;">
+                        <div class=" ui container" style="padding-top:70px">
+                            <div class="ui fluid container">
+                                <h1 class="ui center aligned orange header thai huge-topic">
+                                    <div class="content wow bounceInLeft">Details</div>
+                                    <div class="sub header wow bounceInLeft" id="subhead" >รายละเอียดกิจกรรม</div>
+                                </h1>
+                                <div class="ui container content-box">
+                                    <div class="ui text container">
+                                        <h2 class="ui header orange wow bounceInRight thai">
+                                            <div class="content"><i class="quote left icon"></i>วัตถุประสงค์<i class="quote right icon"></i></div>
+                                        </h2>
+                                        <div class="ui message orange wow bounceInRight important details-content">
+                                            <p>เพื่อฟื้นฟูสภาพป่าต้นน้ำดอยหลวงเชียงดาวที่มีสภาพเสื่อมโทรมให้ฟื้นคืนความอุดมสมบูรณ์ โดยเป็นการร่วมกันปลูกไม้ป่า 10,000 ต้น บนพื้นที่ประมาณ 50 ไร่ </p>
+                                        </div>
+                                        <h2 class="ui header orange wow bounceInRight thai"><div class="content wow bounceInRight">
+                                            <i class="calendar outline icon "></i>สถานที่ / วัน / เวลา</div>
+                                        </h2>
+                                        <div class="ui message orange wow bounceInRight important details-content" style="font-size:40px;color:#d01257">
+                                            <p>สถานที่: เขตอนุรักษ์พันธุ์สัตว์ป่าดอยหลวงเชียงดาว จังหวัดเชียงใหม่ <br> วันศุกร์ ที่ 30 ธ.ค. 2559 - วันอาทิตย์ ที่ 1 ม.ค. 2560</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                     <div class="ui center aligned fluid container" id="mapid"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui fluid container" style="padding-top:110px;padding-bottom:800px;" >
+                        <div name="sponsored" style="height:100px"></div>
+                        <div class="ui container content-box">
+                            <h1 class="ui center aligned orange header thai topic">
+                                <div class="content wow tada">Sponsors</div>
+                                <div class="sub header wow zoomIn"  id="subhead">ผู้สนับสนุน</div>
+                            </h1>
+                            <div class="ui center aligned text container">
+                                <div class="ui small images">
+                                    <img src="img/sponsors/logo1.png" alt="" class="wow bounceInLeft ui image grow logo">
+                                    <img src="img/sponsors/logo3.png" alt="" class="wow bounceInDown ui image grow logo">
+                                    <img src="img/sponsors/logo9.png" alt="" class="wow bounceInRight ui image grow logo">
+                                </div>
+                                <div class="ui medium images">
+                                    <img src="img/sponsors/logo_kmutt.png" alt="" class="wow bounceInLeft ui image grow logo">
+                                    <img src="img/sponsors/logo.png" alt="" class="wow bounceInRight ui image grow logo">
+                                </div>
+                                <div class="ui small images">
+                                    <img src="img/sponsors/logo10.png" alt="" class="wow bounceInLeft ui image grow logo">
+                                    <img src="img/sponsors/alchemist.png" alt="" class="wow bounceInUp ui image grow logo">
+                                    <img src="img/sponsors/logo4.png" alt="" class="wow bounceInUp ui image grow logo">
+                                    <img src="img/sponsors/logo8.png" alt="" class="wow bounceInRight ui image grow logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax-bg/back2_cloud.png" data-z-index="-95">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax-bg/back_tree.png" data-z-index="-94">
+                <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax-bg/front_1_down_tree.png" data-z-index="-93">
+                    <div class="ui fluid container" style="padding-top:300px;padding-bottom:400px;">
+                        <div class="ui text center aligned container" name="calendar" style="padding-top:70px">
+                            <h2 class="ui header orange icon thai topic">
+                                <div class="content wow flipInX"><i class="calendar icon "></i>Calendar</div>
+                                <div class="sub header wow fadeInDown"  id="subhead">กำหนดการ</div>
+                            </h2>
+                        </div>
+                        <div class="ui container calendar-box">
+                            <table class="wow fadeInUp ui celled striped inverted orange table" >
+                                <thead>
+                                    <tr>
+                                        <th colspan="3"><i class="calendar icon"></i>วันศุกร์ที่ 30 ธันวาคม 2559</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td class="collapsing"><i class="wait icon"></i> 17.00 น.   &nbsp;</td>
+                                    <td> นัดเจอที่สถานีรถไฟหัวลำโพง ข้างห้องขายตั๋วรถไฟ กรุณารับประทานอาหารเย็นก่อนขึ้นรถ </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="wait icon"></i> 18.10 น.</td>
+                                    <td> ขึ้นรถไฟ ขบวนรถที่ 1 โบกี้ที่ 9 และ 10 </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="wait icon"></i> 20.00 น.</td>
+                                    <td> ชี้แจงที่พักและพักผ่อน </td>
+                                </tr>
+                                <thead>
+                                    <tr>
+                                        <th colspan="3"><i class="calendar icon"></i>วันเสาร์ที่ 31 ธันวาคม 2559</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td><i class="wait icon"></i> 07.10 น.</td>
+                                    <td> ถึงสถานีรถไฟเชียงใหม่ ทำภารกิจส่วนตัวให้เรียบร้อย </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="wait icon"></i> 09.00 น.</td>
+                                    <td> เดินทางถึงค่ายเยาวชนเชียงดาว ต.เชียงดาว อ.เชียงดาว จ.เชียงใหม่ ชี้แจงรายละเอียดการลงพื้นที่ปลูกป่า ในเขตรักษาพันธุ์สัตว์ป่าเชียงดาว </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="wait icon"></i> 10.00 น.</td>
+                                    <td> ลงพื้นที่ปลูกป่า จำนวน 100 ไร่ นำกล้าไม้จำนวน 10,000 ต้น ได้แก่ ต้นกล้วย สมอพิเภก มะขามป้อม ขี้เหล็ก ไทร มะม่วงป่า ประดู่ป่า เพกา ฯลฯ ซึ่งมีคุณสมบัติกักเก็บน้ำ เป็นพืชอาหารสัตว์ป่า และเอื้อประโยชน์ต่อคนท้องถิ่น </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="wait icon"></i> 12.00 น.</td>
+                                    <td> รับประทานอาหารกลางวัน(จัดเตรียมให้) </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="wait icon"></i> 13.10 น.</td>
+                                    <td> ลงพื้นที่ปลูกป่า(ต่อ) </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="wait icon"></i> 18.00 น.</td>
+                                    <td> รับประทานอาหารเย็น(จัดเตรียมให้) </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="wait icon"></i> 19.30 น.</td>
+                                    <td> พักผ่อนตามอัธยาศัย </td>
+                                </tr>
+                                <thead>
+                                    <tr>
+                                        <th colspan="3"><i class="calendar icon"></i>วันอาทิตย์ที่ 1 มกราคม 2560</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td><i class="wait icon"></i>08.00 น.</td>
+                                    <td>รับประทานอาหารเช้า(จัดเตรียมให้) ลงพื้นที่ปลูกป่าต่อครึ่งวัน</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="wait icon"></i>13.00 น.
+                                    </td>
+                                    <td>สรุปกิจกรรม</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="wait icon"></i>14.00 น.</td>
+                                    <td>เดินทางออกจากค่ายเยาวชนเชียงดาว</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="wait icon"></i>16.00 น.</td>
+                                    <td>ถึงสถานีรถไฟเชียงใหม่ รับข้าวกล่องสำหรับอาหารมื้อเย็น</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="wait icon"></i>18.00 น.</td>
+                                    <td>เดินทางกลับด้วยขบวนรถไฟที่ 2 เชียงใหม่ – กรุงเทพ โดยสวัสดิภาพ</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <a name="important"></a>
+                    <div class="ui container fluid" style="padding-top:200px;padding-bottom:500px;">
+                        <div class="ui text center aligned container">
+                            <div class="ui huge icon header">
+                                <h2 class="ui header orange thai big-topic">
+                                    <div class="content wow flipInY">
+                                        <i class="warning icon animated infinite flip"> </i>
+                                        IMPORTANT
+                                        <div class="sub header"  id="subhead">สิ่งสำคัญในการร่วมกิจกรรม</div>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div class="ui container important-box">
+                                <div class="ui compact message red wow slideInLeft">
+                                    <div class="header">
+                                        <h3 class="important">คุณสมบัติ</h3>
+                                    </div>
+                                    <div class="list important ">
+                                        <div class="item"><i class="right triangle icon"></i>อายุ 18 ปีขึ้นไป</div>
+                                        <div class="item"><i class="right triangle icon"></i>ร่างกายแข็งแรง</div>
+                                        <div class="item"><i class="right triangle icon"></i>มีใจรักธรรมชาติ</div>
+                                        <div class="item"><i class="right triangle icon"></i>มีความอดทนสูง</div>
+                                        <div class="item"><i class="right triangle icon"></i>สนใจใน<b>ธรรมชาติ</b></div>
+                                    </div>
+                                </div>
+                                <div class="ui compact green message wow slideInRight">
+                                    <div class="header">
+                                        <h3 class="important">สิ่งของที่จำเป็น</h3>
+                                    </div>
+                                    <div class="list important">
+                                        <div class="item"><i class="right triangle icon"></i>ไฟฉาย</div>
+                                        <div class="item"><i class="right triangle icon"></i>ยากันยุง</div>
+                                        <div class="item"><i class="right triangle icon"></i>เสื้อกันหนาว</div>
+                                        <div class="item"><i class="right triangle icon"></i>อุปกรณ์อาบน้ำ</div>
+                                        <div class="item"><i class="right triangle icon"></i>อุปกรณ์กันแดด</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax-bg/back2_tree.png.png" data-z-index="-94">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax-bg/front_2_down_tree.png" data-z-index="-93">
+                <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax-bg/sec_back_body_tree.png" data-z-index="-97">
+                    <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax-bg/mid_body_tree.png" data-z-index="-96">
+                        <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax-bg/front_body_tree.png" data-z-index="-95">
+                            <div class="ui fluid container" style="padding-top:170px;padding-bottom:400px;margin-bottom:-1px">
+                                <div class="ui center aligned container" name="gallery" style="padding-top:70px">
+                                    <div class="ui huge icon center aligned header">
+                                        <h1 class="ui header orange thai topic"><i class="image icon"></i>
+                                            Gallery
+                                        </h1>
+                                        <div class="sub header thai" id="subhead">ภาพกิจกรรม</div>
+                                    </div>
+                                    <div class="ui container gallery-box">
+                                        <div class="ui images medium">
+                                            <div class="ui images ">
+                                                <img src="img/gallery/gal_1.jpg" alt="gal_1" class="grow bord wow bounceInLeft">
+                                                <img src="img/gallery/gal_2.jpg" alt="gal_2" class="grow bord wow bounceInDown">
+                                                <img src="img/gallery/gal_3.jpg" alt="gal_3" class="grow bord wow bounceInRight">
+                                            </div>
+                                            <div class="ui images">
+                                                <img src="img/gallery/gal_4.jpg" alt="gal_4" class="grow bord wow bounceInLeft">
+                                                <img src="img/gallery/gal_5.jpg" alt="gal_5" class="grow bord wow flipInY">
+                                                <img src="img/gallery/gal_6.jpg" alt="gal_6" class="grow bord wow bounceInRight">
+                                            </div>
+                                            <div class="ui images">
+                                                <img src="img/gallery/gal_7.jpg" alt="gal_7" class="grow bord wow bounceInLeft">
+                                                <img src="img/gallery/gal_8.jpg" alt="gal_8" class="grow bord wow flipInY">
+                                                <img src="img/gallery/gal_9.jpg" alt="gal_9" class="grow bord wow bounceInRight">
+                                            </div>
+                                            <div class="ui images">
+                                                <img src="img/gallery/gal_10.jpg" alt="gal_10" class="grow bord wow bounceInLeft">
+                                                <img src="img/gallery/gal_11.jpg" alt="gal_11" class="grow bord wow bounceInUp">
+                                                <img src="img/gallery/gal_12.jpg" alt="gal_12" class="grow bord wow bounceInRight">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax-bg/top_soil.png" data-z-index="-80">
+                    <div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax-bg/body_soil.png" data-z-index="-85">
+                        <div class="ui fluid container" style="padding-top:200px;padding-bottom:200px;">
+                            <a name="faqs"></a>
+                            <div class="ui container contact-box">
+                                <div class="ui raised very padded text container segment wow zoomInDown">
+                                    <div class="ui huge icon center aligned header">
+                                        <h2 class="ui header orange thai medium-topic">
+                                            <div class="content">
+                                                <i class="help icon animated infinite jello"></i>
+                                                FAQs
+                                                <div class="sub header"  id="subhead">คำถามพบบ่อย</div>
+                                            </div>
+                                        </h2>
+                                      </div>
+                                    <div class="ui Brown vertical segment">
+                                        <p class="orange quest"><i class="help circle icon"></i> : ทำไมเต้หล่อจัง?</p>
+                                        <p class="orange"><i class="check icon"></i> : เรื่องธัมดาห์</p>
+                                    </div>
+                                    <div class="ui Brown vertical segment">
+                                        <p class="orange quest"><i class="help circle icon"></i> : อิอิเลย?</p>
+                                        <p class="orange"><i class="check icon"></i> : อิอิแหละ</p>
+                                    </div>
+                                    <div class="ui Brown vertical segment">
+                                        <p class="orange quest"><i class="help circle icon"></i> : วันนี้วันไร?</p>
+                                        <p class="orange"><i class="check icon"></i> : วันที่ฉันรักเธอ</p>
+                                    </div>
+                                    <div class="ui Brown vertical segment">
+                                        <p class="orange quest"><i class="help circle icon"></i> : พรุ่งนี้วันไร?</p>
+                                        <p class="orange"><i class="check icon"></i> : วันที่เธอไม่รักฉัน</p>
+                                    </div>
+                                    <div class="ui Brown vertical segment">
+                                        <p class="orange quest"><i class="help circle icon"></i> : นก+นก คือใคร?</p>
+                                        <p class="orange"><i class="check icon"></i> : เลา</p>
+                                    </div>
+                                    <a name="contactus"></a>
+                                </div>
+                                <div class="ui raised very padded text container segment  wow zoomInUp">
+                                    <h2 class="ui header orange center aligned icon thai small-topic">
+                                        <div class="content">
+                                            <i class="call icon animated infinite tada"></i>Contact us
+                                            <div class="sub header"  id="subhead">ช่องทางการติดต่อ</div>
+                                        </div>
+                                    </h2>
+                                    <div class="ui center aligned fluid container">
+                                        <a href="#"><img src="img/icons/fbicon.png" class="ui mini image centered" alt="">
+                                        </a>
+                                        <p class=" contact">facebook.com/helloearthno2</p>
+                                        <a href="#"><img src="img/icons/twicon.png" class="ui mini image centered" alt="">
+                                        </a>
+                                        <p class=" contact">@helloearthno2</p>
+                                        <a href="#"><img src="img/icons/gmicon.png" class="ui mini image centered" alt="">
+                                        </a>
+                                        <p class=" contact">helloearthno2@gmail.com</p>
+                                    </div>
+                                    <div class="ui green centered card wow flip">
+                                        <a href="https://www.facebook.com/FirsTziiz.K?fref=nf" class="image">
+                                            <div class="ui slide masked reveal image">
+                                                <img src="img/team/pfirst.jpg" class="visible content">
+                                                <img src="img/team/pfirst2.jpg" class="hidden content">
+                                            </div>
+                                        </a>
+                                        <div class="content">
+                                            <a href="https://www.facebook.com/FirsTziiz.K?fref=nf" class="header thai"><i class="man icon"></i>พี่เฟิส(Staff)</a>
+                                            <div class="meta">
+                                                <a><i class="call icon"></i>0991234567 | <i class="twitter icon"></i>@FirstEIEI</a>
+                                                <a name="dev"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui raised very padded text container segment wow tada">
+                                    <h2 class="ui header orange center aligned icon thai small-topic">
+                                        <div class="content ">
+                                            <i class="bug icon animated infinite shake"></i>Team No.2
+                                        </div>
+                                    </h2>
+                                    <div class="ui center aligned fluid container">
+                                        <div class="ui center aligned three cards">
+                                            <a  href="https://www.facebook.com/pacharapol.api" class="red card">
+                                              <div class="ui medium circular rotate reveal image">
+                                                <img src="img/team/hid.png" class="visible content">
+                                                <img src="img/team/flu.jpg" class="hidden content">
+                                              </div>
+                                            </a>
+                                            <a href="https://www.facebook.com/imgrbs" class="green card">
+                                              <div class="ui medium circular rotate reveal image">
+                                                <img src="img/team/hid.png" class="visible content">
+                                                <img src="img/team/tae.jpg" class="hidden content">
+                                              </div>
+                                            </a>
+                                            <a href="https://www.facebook.com/sawaros.rattananetre" class="orange card">
+                                              <div class="ui medium circular rotate reveal image">
+                                                <img src="img/team/hid.png" class="visible content">
+                                                <img src="img/team/toe.jpg" class="hidden content">
+                                              </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui vertical footer fixed segment footer-box">
+                        <div class="ui center aligned container">
+                            <div class="ui stackable grid">
+                                <div class="three wide column">
+                                    <h4 class="ui header">Quick Links</h4>
+                                    <div class="ui link list">
+                                        <a class="item" href="#details" target="_blank">Details</a>
+                                        <a class="item" href="#calendar" target="_blank">Calendar</a>
+                                        <a class="item" href="#gallery" target="_blank">Gallery</a>
+                                        <a class="item" href="#contactus" target="_blank">Contact us</a>
+                                    </div>
+                                </div>
+                                <div class="three wide column">
+                                    <h4 class="ui header">Contact & Social</h4>
+                                    <div class="ui link list">
+                                        <a class="item" href="https://www.facebook.com/helloearthno2" target="_blank">Facebook</a>
+                                        <a class="item" href="https://twitter.com/helloearthno2" target="_blank">Twitter</a>
+                                        <a class="item" href="#contactus" target="_blank">Gmail</a>
+                                        <a class="item" href="https://www.facebook.com/FirsTziiz.K?fref=nf" target="_blank">Staff</a>
+                                    </div>
+                                </div>
+                                <div class="seven wide right floated column">
+                                    <h4 class="ui orange header">This Project Make By HelloEarth Team</h4>
+                                    <p> Just Heal The World. #HelloEarth #HelloWorld</p>
+                                    <a href="#home"><button class="ui large orange button">Back To Top</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui modal">
+        <i class="close icon"></i>
+        <div class="header ui center aligned">
+            <p class="thai">Register | ลงทะเบียน</p>
+        </div>
+        <div class="content">
+            <form class="ui big equal width form thai" method="post">
+                <h4 class="ui dividing header thai">ข้อมูลส่วนตัว</h4>
+                <div class="required field">
+                    <label>ชื่อ-สกุล</label>
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="firstName" placeholder="ชื่อจริง">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="lastName" placeholder="นามสกุล">
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <div class="field">
+                        <label>ชื่อเล่น</label>
+                        <input type="text" name="nickName" placeholder="ชื่อเล่น">
+                    </div>
+                    <div class="required field">
+                        <label>เพศ</label>
+                        <div class="ui selection dropdown">
+                            <input type="hidden" name="gender">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">เพศ</div>
+                            <div class="menu">
+                                <div class="item" data-value="1">ชาย</div>
+                                <div class="item" data-value="0">หญิง</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <div class="field">
+                        <label>วันเกิด</label>
+                        <input type="text" placeholder="ว/ด/ป">
+                    </div>
+                    <div class="field">
+                        <label>อายุ</label>
+                        <input type="text" name="age" placeholder="อายุ">
+                    </div>
+                </div>
+                <h4 class="ui dividing header thai">ข้อมูลติดต่อ</h4>
+                <div class="required fields">
+                    <div class="field">
+                        <label>อีเมล</label>
+                        <div class="fields">
+                            <div class="twelve wide field">
+                                <input type="text" name="telephone" placeholder="xxx@xxx.xxx">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>เบอร์โทรติดต่อ</label>
+                        <div class="fields">
+                            <div class="twelve wide field">
+                                <input type="text" name="telephone" placeholder="(eg. 09x-xxx-xxxx)">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ui container center aligned">
+                    <button class="ui green approve button thai" type="submit">ยืนยัน</button>
+                    <button class="ui red approve button thai" type="reset">ล้าง</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="dist/js/jquery.js"></script>
+    <script src="dist/js/package.js"></script>
+    <script src="dist/js/vide/jquery.vide.min.js"></script>
+    <script src="dist/js/parallax.min.js"></script>
+    <script src="dist/js/dropdown.min.js"></script>
+    <script src="dist/js/semantic.min.js"></script>
+    <script src="dist/js/wow.min.js"></script>
+    <script src="dist/js/leaflet.js"></script>
+    <script>
+    var map = L.map('mapid').setView([19.399722, 98.87666], 13);
+
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([19.399722, 98.87666]).addTo(map)
+      .bindPopup('เขตอนุรักษ์พันธุ์สัตว์ป่าดอยหลวงเชียงดาว')
+      .openPopup();
+    </script>
+    <script>
+        $('.ui.dropdown').dropdown();
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".register-modal").click(function() {
+                $('.ui.modal').modal('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.ui.sticky')
+                .sticky({
+                    context: '#stickmenu'
+                });
+        })
+        $(function() {
+
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $('.scroll-down').click (function() {
+                $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+                return false;
+            });
+        });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

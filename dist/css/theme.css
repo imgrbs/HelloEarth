@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'bangna';
+    src: url('../fonts/bangna-new.ttf') format('truetype');
+}
+.thai{
+  font-family: 'bangna' !important;
+}
+.small-topic{
+  font-size:50px !important;
+}
+.topic{
+  font-size:60px !important;
+}
+.medium-topic{
+  font-size:70px !important;
+}
+.big-topic{
+  font-size:90px !important;
+}
+.huge-topic{
+  font-size:100px !important;
+}
+.footer-box{
+  padding-top:80px !important;
+  padding-bottom:50px !important;
+}
+.details-content{
+  font-size:40px !important;
+  color:#d01257 !important;
+}
+.content-box{
+  background-color:rgba(225,225,225,0.3);
+  padding-top:50px;
+  padding-bottom:50px;
+  border-radius:30px;
+}
+.important-box{
+  background-color:rgba(225,225,225,0.3);
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius:15px;
+  padding-left:20px;
+  padding-right:20px;
+}
+.gallery-box{
+  background-color:rgba(225,225,225,0.3);
+  padding-top:35px;
+  padding-bottom:50px;
+  border-radius:10px;
+}
+.contact-box{
+  background-color:rgba(225,225,225,0.3);
+  padding-top:100px;
+  padding-bottom:100px;
+  border-radius:15px;
+}
+.calendar-box{
+  padding-top:20px;
+  padding-bottom:20px;
+  border-radius:15px;
+  padding-left:100px;
+  padding-right:100px;
+}
+.menu-decor{
+  background-color:#f2711c !important;
+  height:55px !important;
+  border-radius:0px !important;
+}
+.grow {
+    transition: all .2s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.6);
+    border-width: thick;
+    border-color: #FFF;
+}
+
+.orange {
+    color: orange;
+    font-family: 'bangna';
+    font-size: 20px;
+}
+#subhead{
+  font-size:35px;
+  color: #fbb448;
+  font-weight: bold;
+}
+.bord {
+    border: 0px solid #ffe1a1;
+    padding: 0px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:10px;
+}
+.quest{
+    font-weight: bolder;;
+    font-size: 25px;
+    color: #f95959  ;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -32.5px;
+  display: block;
+  width: 64px;
+  height: 64px;
+  border: 5px solid #e3670c;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 1s infinite 2s;
+  animation: bounce 1s infinite 1s;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+td{
+  min-width: 100px;
+}
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 6px solid #e3670c;
+    border-width: 0px 0 2px 2px;
+}
+.logo{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@font-face{
+  font-family: 'hello';
+  src:url('../fonts/beyond_the_mountains.ttf') format('truetype'),
+      url('../fonts/beyond_the_mountains.otf') format('opentype');
+}
+@font-face{
+  font-family: 'calendar';
+  src:url('../fonts/waan-free_regular.ttf') format('truetype');
+}
+.important{
+  font-family: 'calendar';
+  font-size:55px;
+}
+.contact{
+  font-family: 'bangna';
+  font-size:25px;
+  color:#d01257;
+}
+#mapid { height: 400px; width: 800px; }
